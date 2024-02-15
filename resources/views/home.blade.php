@@ -1,11 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row">
-            <div class="col-3">
-                AAA
+    <div class="text-center">
+        <h1>Homepage</h1>
+        <a href="{{ route('movie_table') }}">
+            <div class="btn btn-primary">
+                Go To Movies
             </div>
-        </div>
+        </a>
     </div>
+</body>
 @endsection

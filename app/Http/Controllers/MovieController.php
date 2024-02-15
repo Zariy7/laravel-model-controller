@@ -8,8 +8,8 @@ use App\Models\Movie;
 class MovieController extends Controller
 {
     public function index(){
-        $movies = Movie::all();
-        
-        return view('movies.index');
+        $movies_db = Movie::all();
+        //dd($movies_db);
+        return view('movies.index', compact('movies_db'));
     }
 }
